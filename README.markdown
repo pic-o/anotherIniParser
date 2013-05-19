@@ -2,6 +2,8 @@ anotherIniParser
 =======
 The label says it all, "another" (there are many many out there) simple ini parser for config files. This was made to be cross platform / license compatible
 
+Original blog post @ http://blog.pic-o.com/2013/05/another-ini-parser/
+
 Usage
 -----
 Ensure the compiller source libary is setup to include the source codes. And....
@@ -31,14 +33,11 @@ Example?
 
 Short-Story
 -----------
-Creating your "own ini parser" is seriously a good "exercise" for ANY programmer. And would also give subtle exposure to the programmer "mindset" on peer review.
-
-For example: This uses c-style const char* strings. Instead of C++ strings, due to my belief (debatable) on the usesage of char*, and the self-decipline involved in its memory managment.
-While taking into account possible memory leaks (hence rquiring const char* inputs). In-event that performance (seriously?) is a consideration, there is always a leaky _sectionN() varient.
-But seriously, use that at your own risk. Etc, Etc.
-
-Also generally speaking, after several years (coming back and going) of refining this iniParser. I found it relatively "good" to use in many of the projects. Especially while avoiding the huge 
-overhead libraries (its not performance, its the ability to easily setup and compile anywhere : ie client machines). And henced served me well.
++ Creating your "own ini parser" is seriously a good "exercise" for ANY programmer. And would also give subtle exposure to the programmer "mindset" on peer review.
++ This uses c-style const char* strings. Instead of C++ strings, due to my belief (debatable) on the usage of char*, and the self-disciplined involved in its memory management.
++ It is non-memory leaky on its own, and assumes all input will be cleaned up by its own respective (hence requiring const char* inputs).[Exception exists for the _sectionN() variant. For those squeezing out performance, while knowing how to manage the memory overhead]
++ Easily included in any project, as it follows std C/C++, while having its own conditional build for windows/linux/mac(untested) respectively. (this is especially useful in building changes on the client machine, which may lack "certain things")
++ Easy dumping / debugging / error handling (returns breaking point line number, in negative value)
 
 Note: This is the most recent cleanup version. And has yet to seen full wild deployment. But so far it passed most of my test. I will remove this line in due time, when i have enough "code reviews"
 
