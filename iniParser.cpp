@@ -1,4 +1,10 @@
 /***********************************************************************************************************************************************************
+Original Web Link:
+http://blog.pic-o.com/2013/05/another-ini-parser/
+
+Personal request:
+Drop me an email if you do use this / encounter problems =)
+
 License Type:
 BSD 3-Clause (This is both "GPL" and "commercial with acknowledgement" compatible)
 

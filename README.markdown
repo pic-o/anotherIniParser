@@ -13,6 +13,10 @@ Ensure the compiller source libary is setup to include the source codes. And....
 And that you compile, and include the needed object files at the same time (iniParser, charTools)
 (note that BSD 3-Clause NOT a viral GPL/LGPL, it mainly require acknowledgment. So you can include this in your work directly as source code)
 
+Personal Request
+----------------
+Drop me an email if you do use this / encounter problems =)
+
 Example?
 --------
 	//The following is a quick rough guide on how to start things working. For more details see the various individual function notes
